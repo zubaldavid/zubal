@@ -37,7 +37,7 @@ class App extends Component {
       verticalAlign='middle'>
       <Grid.Column style={{ maxWidth: 550, maxHeight: 550, opacity:0.88,shadow:10}}>
       <Card className='userCard' href='/' centered >
-        <Image src='zubal.jpg'  style={{height:'375px'}} />
+        <Image src='zubal.JPG'  style={{height:'375px'}} />
         <Card.Content>
           <Card.Header>David Zubal</Card.Header>
           <Card.Meta>
