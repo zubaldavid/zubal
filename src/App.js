@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image, Grid} from 'semantic-ui-react'
+import { Card, Icon, Image, Grid, Header} from 'semantic-ui-react'
 import Particles from 'react-particles-js'
 import { Link } from 'react-router-dom'
 import './App.css';
@@ -15,7 +15,7 @@ class App extends Component {
               value:80,
             },
             color:{
-              value:["#E86363","#556b2f", "#7C5852"]
+              value:["#E86363","#556b2f","#7C5852"]
             },
             size: {
               value:4
@@ -32,30 +32,35 @@ class App extends Component {
       	}}
         style={{width: '100%', height: '100%',position:'absolute'}}
       />
-      <Grid textAlign='center'
-      style={{ height: '100%' }}
-      verticalAlign='middle'>
-      <Grid.Column style={{ maxWidth: 550, maxHeight: 550, opacity:0.88,shadow:10}}>
-      <Card className='userCard' href='/' centered >
-        <Image src='zubal.JPG'  style={{height:'375px'}} />
+      <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
+      <Grid.Column style={{ maxWidth: 550, opacity:0.88}}>
+      <Card className='userCard' centered >
         <Card.Content>
-          <Card.Header>David Zubal</Card.Header>
+        <br/>
+        <Image src='Israel.jpg' size='small' circular />
+          <Header as='h1'>David Zubal</Header>
           <Card.Meta>
             <span className='date'>
-              Developer.Designer.Learner
+            Developer • Designer • Learner
             </span>
           </Card.Meta>
-        </Card.Content>
-        <Card.Content style={{float:'left',color: 'black'}}>
-          <Card.Meta>
-            <Icon name='github' style={{color:'gray'}}/>
-              <a href='https://github.com/zubaldavid/' >Github  </a>
-            <Icon name='linkedin square' style={{color:'gray'}}/>
-              <a href='https://www.linkedin.com/in/zubaldavid/' >Linkedin</a>
-            <br/>
-            <Icon name='mail' style={{color:'gray'}}/>
-              <a href='mailto:zubaldavid@gmail.com'>zubaldavid@gmail.com</a>
           <br/>
+          <Card.Description>Hi! I am a React developer who enjoys original ideas and supurb design.</Card.Description>
+        </Card.Content>
+        <Card.Content>
+          <Card.Meta>
+            <a href="https://github.com/zubaldavid/">
+              <Icon name='github' size='big' color="black" link/>
+            </a>
+            <a href="https://www.linkedin.com/in/zubaldavid/">
+              <Icon name='linkedin square' size='big' color="blue" link/>
+            </a>
+            <a href="mailto:zubaldavid@gmail.com">
+              <Icon name='mail' size='big' color="gray" link/>
+            </a>
+            <a href="https://s3.amazonaws.com/port-folio/resume.pdf">
+              <Icon name='file text' size='big' link/>
+            </a>
           </Card.Meta>
         </Card.Content>
       </Card>
