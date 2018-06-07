@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Card, Icon, Image, Grid, Header} from 'semantic-ui-react'
 import Particles from 'react-particles-js'
 import { Link } from 'react-router-dom'
-import './App.css';
 
 class App extends Component {
   render() {
@@ -45,7 +44,7 @@ class App extends Component {
             </span>
           </Card.Meta>
           <br/>
-          <Card.Description>Hi! I am a React developer who enjoys original ideas and supurb design.</Card.Description>
+          <Card.Description style={{fontFamily:'HelveticaNeue-Light'}}>Hi! I am a React developer who enjoys original ideas and supurb design.</Card.Description>
         </Card.Content>
         <Card.Content>
           <Card.Meta>
